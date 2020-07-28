@@ -10,6 +10,7 @@
     background-image: url(/assets/img/bg.fw.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,17 +21,115 @@
     width: 700px;
 }
 
+
+/*todoHeader*/
 .todo-list-container .todo-header{
     width: 100%;
     height: 50px;
-    background-color: blue;
+    background-color: #6f6ff7;
+    cursor: pointer;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
 }
+
+.todo-list-container .todo-header .header-list-icon{
+    margin-left: 16px;
+    width: 25px;
+    height: 23px;
+    background-image: url(/assets/img/list-icon.fw.png);
+    background-size: 24px;
+    background-repeat:no-repeat;
+    background-position: center;
+
+}
+
+.todo-list-container .todo-header .header-text{
+    margin-left: 11px;
+    margin-right: auto;
+}
+
+.todo-list-container .todo-header .header-buttons{
+    width: 57px;
+    margin-right: 19px;
+    display: none;
+    align-items:center;
+    justify-content: space-around;
+}
+.todo-list-container .todo-header:hover .header-buttons{
+    width: 57px;
+    margin-right: 19px;
+    display: flex;
+}
+
+.todo-list-container .todo-header .header-buttons .header-edit{
+    width:49%;
+    height: 16px;
+    background-image: url(/assets/img/edit_blue.fw.png);
+    background-size:16px;
+    background-repeat:no-repeat;
+    background-position: center;
+    border-right: 1px solid black;
+
+}
+
+.todo-list-container .todo-header .header-buttons .header-delete{
+    width:49%;
+    height: 16px;
+    background-image: url(/assets/img/delete_blue.fw.png);
+    background-size:16px;
+    background-repeat:no-repeat;
+    background-position: center;
+    
+}
+
+
+
+/*todoAdd*/
 
 .todo-list-container .todo-add-container{
     width: 100%;
     height: 50px;
     background-color: grey;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
 }
+
+.todo-list-container .todo-add-container .plus-button{
+    margin-left: 13px;
+    height: 23px;
+    width: 23px;
+    background-image: url(/assets/img/plus.fw.png);
+    background-size:23px;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.todo-list-container .todo-add-container .input-add_button-container {
+    margin-right: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 30px;
+}
+
+.todo-list-container .todo-add-container .input-add_button-container input{
+    height: 100%;
+    width: 533px;;
+}
+
+.todo-list-container .todo-add-container .input-add_button-container button{
+    height: 100%;
+    margin-left: -1px;
+    width: 108px;
+}
+
+
+
+
+
+/*Tasks*/
 
 .todo-task-container{
     width: 100%;
@@ -41,4 +140,69 @@
     height: 50px;
     background-color: white;
     border-bottom: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todo-task-container .todo-task:hover{
+    background-color:wheat;
+}
+
+
+.todo-task-container .todo-task .todo-check{
+    width: 46px;
+    height: 100%;
+    border-right: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-task-container .todo-task .todo-text{
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.todo-task-container .todo-task .todo-task-buttons{
+    display: none;
+    align-items:center;
+    justify-content: space-around;
+    margin-right: 24px;
+    width: 77px;
+    
+
+}
+.todo-task-container .todo-task:hover .todo-task-buttons{
+    display: flex;
+}
+
+
+.todo-task-container .todo-task .todo-task-buttons .task-move{
+    width: 33%;
+    height: 13px;
+    background-image: url(/assets/img/arrows.fw.png);
+    background-size:10px;
+    background-repeat:no-repeat;
+    background-position: center;
+    border-right: 1px solid black;
+}
+
+.todo-task-container .todo-task .todo-task-buttons .task-edit{
+    width: 33%;
+    height: 12px;
+    background-image: url(/assets/img/edit_icon.fw.png);
+    background-size: 12px;
+    background-repeat:no-repeat;
+    background-position: center;
+    border-right: 1px solid black;
+}
+
+.todo-task-container .todo-task .todo-task-buttons .task-delete{
+    width: 33%;
+    height: 12px;
+    background-image: url(/assets/img/delete_icon.fw.png);
+    background-size: 12px;
+    background-repeat:no-repeat;
+    background-position: center;
 }
