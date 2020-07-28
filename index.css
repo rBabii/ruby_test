@@ -10,4 +10,35 @@
     background-image: url(/assets/img/bg.fw.png);
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.todo-list-container{
+    width: 700px;
+}
+
+.todo-list-container .todo-header{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+}
+
+.todo-list-container .todo-add-container{
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+}
+
+.todo-task-container{
+    width: 100%;
+}
+
+.todo-task-container .todo-task{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-bottom: 1px solid black;
 }
